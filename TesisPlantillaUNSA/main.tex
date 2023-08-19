@@ -1,0 +1,85 @@
+\documentclass[11pt,openany,final]{unsa}
+\title{Título}
+\author{Nombres y Apellidos}%
+\examinerone{Prof. Dr. Nombre Apellido}{Presidente}%
+\examinertwo{Prof. Dr. Nombre Apellido}{Secretario}%
+\examinerthree{Prof. Dr. Nombre Apellido}{Integrante}%
+\examinerfour{Prof. Dr. Nombre Apellido}{Externo}{Universidad del ABC} % of being the case
+\date{-}
+%\dedicate{ Dedicatoria }
+\usepackage{microtype}
+\usepackage{caption}
+\captionsetup[table]{name=Tabla}
+
+\usepackage{multirow}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+    %basicstyle=\linespread{0.8}
+}
+
+\lstset{style=mystyle }
+
+\renewcommand{\lstlistingname}{Fragmento de código}
+\decimalpoint
+
+\begin{document}%%%%%%%%-------------------------------------------------------
+\newcolumntype{L}{>{$}l<{$}}
+\newcolumntype{C}{>{$}c<{$}}
+\newcolumntype{R}{>{$}r<{$}}
+%\makeFirstCover \makeSecondCover %
+\input{caratula}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frontmatter}
+%\approved{\cuatro}%  {\tres} or {\cuatro}
+\dedicatory
+\begin{singlespace}
+\tableofcontents \listoffigures \listoftables \pagebreak
+\end{singlespace}
+%\myAcknowledgements{Agradecimientos}%
+\myResumen{Resumen}%
+%\myAbstrac{Abstract}%
+\end{frontmatter}%
+
+\pagestyle{fancyplain}
+
+\include{Cap1}
+\include{Cap2}
+\include{Cap3}
+\include{Cap4}
+\include{Cronograma}
+%\include{Cap5}
+%\include{Cap6}
+% \myappendix{Apendice}
+
+\begin{singlespace}
+\bibliographystyle{apalike}%plain
+\mybibliography{biblio}
+\end{singlespace}
+
+
+\end{document}%%%%%%%%--------------------------------------------------------
