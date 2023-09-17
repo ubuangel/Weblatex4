@@ -1,0 +1,188 @@
+\documentclass[12pt]{article}
+\usepackage{caption}
+
+% Esto es para poder escribir acentos directamente:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{float}
+\usepackage{enumerate} %-->
+
+\usepackage[nottoc]{tocbibind}%-->
+
+% Esto es para que el LaTeX sepa que el texto está en español españolao:
+\usepackage[spanish]{babel}
+\selectlanguage{spanish}%-->
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{xcolor}
+\usepackage{hyperref}%compilar 2 veces
+\usepackage{geometry}
+\usepackage{listings}
+\usepackage{pdfpages}
+\usepackage{subfig}%figuras una alado de otraa
+
+
+%% Paquetes de la AMS
+\usepackage{amsmath, amsthm, amsfonts}%--->
+
+%% Para añadir archivos con extensión pdf, jpg, png or tif
+\usepackage{graphicx}%-->
+\usepackage[colorinlistoftodos]{todonotes}%-->
+%\usepackage[colorlinks=true, allcolors=blue]%{hyperref}%--->
+
+
+
+
+
+\definecolor{commentsColor}{rgb}{0.13, 0.55, 0.13}
+\definecolor{keywordsColor}{rgb}{0.000000, 0.000000, 0.635294}
+\definecolor{stringColor}{rgb}{0.558215, 0.000000, 0.135316}
+\definecolor{numerolineas}{rgb}{0.41,0.41,0.41}
+
+\usepackage{verbatim}%coemntario begin%{} end
+
+\usepackage{fancyhdr}%activar para usar encabezados esttilos funcy
+
+%al final imprimir si solo utilizamos un printbibliografi  aqui el archivo bib
+\usepackage[ backend=biber,style=apa]{biblatex}
+\addbibresource{referencias.bib}%ojo con la ubicacion del bib y compilar con bibtex 
+
+%\usepackage[top=1.5cm,bottom=1.0cm,left=1.25cm,right=1.25cm]%{geometry}%para todos las paginas
+
+
+
+
+\providecommand{\keywords}[1]
+{
+  \small	
+  \textbf{\textit{Keywords---}} #1
+}
+
+%% Primeroo escribimos el título
+\title{Bucles Anidados }
+\author{Angel Andres Bejar Merma\\
+  \small Universidad Nacional de San Agustin\\
+  \small abejar@unsa.com\\
+  \small Ciudad de Arequipa
+  %\date{\today} 
+}
+
+\begin{document}
+%\newgeometry%{bottom=2.5cm,top=2.6cm,left=2.5cm,right=2.5cm}
+%\restoregeometry
+%\includepdf{9}
+
+%
+%paraa el report 
+
+
+\maketitle
+
+%% Aquí podemos añadir un resumen del trabajo (o del artículo en su caso) 
+\begin{abstract}
+    Estao es una plantilla simple para crear un articulo \LaTeX en español, con algunos comandos que se usarán frecuentemente para hacer tareas de la licenciatura en Física.
+    \end{abstract}
+    
+    \keywords{one, two, three, four}
+%\begin{abstract}
+
+
+
+%\end{abstract}
+
+%\vspace{5mm} %espacio vertical usar en imagen
+
+
+
+\section{Parte 1}
+
+Desarrollar un compilador descendente recursivo para evaluar expresiones booleanas,
+dada la siguiente gramática.\ref{fig:1}
+
+
+
+
+\begin{figure}[H]%estricto
+\centering
+%\includegraphics[width=15cm]{imagenes/.png}
+\caption{}
+\label{fig:1}
+\end{figure}
+
+
+\begin{figure}[H]%estricto
+\centering
+%\includegraphics[width=15cm]{imagenes/.png}
+\caption*{}
+
+\end{figure}
+
+
+\begin{figure}[H]%estricto
+\centering
+%\includegraphics[width=15cm]{imagenes/.png}
+\caption*{}
+
+\end{figure}
+\newpage
+\section{Desarrollo}
+\newpage
+
+
+
+\section{Codigo}
+
+
+%\end{samepage}
+
+
+\begin{figure}[H]%estricto
+\centering
+%\includegraphics[width=15cm]{imagenes/.png}
+\caption*{}
+
+\end{figure}
+
+
+
+
+\section{Anexo}
+
+
+
+\begin{figure}[H]%estricto
+\centering
+%\includegraphics[width=15cm]{imagenes/.png}
+\caption*{}
+
+\end{figure}
+
+
+
+
+
+\newpage
+\section{Conclusion}
+
+Este algoritmo conocido como el de construcción de
+subconjuntos convierte un AFN en un AFD haciendo uso de
+
+
+
+	
+
+
+\vspace{20 mm}
+
+
+ web1 \cite{naiouf2010procesamiento}
+
+
+
+
+\printbibliography
+
+\end{document}
+
